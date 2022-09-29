@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ThirdLabOOP</string>
+    <string name="Name">Название</string>
+    <string name="Developer">Разработчик</string>
+    <string name="Publisher">Издатель</string>
+    <string name="Next">Далее</string>
+    <string name="Return">Назад</string>
+    <string name="Genre">Жанр</string>
+    <string name="Platform">Платформа</string>
+    <string name="ReleaseDate">Дата выхода</string>
+    <string name="Finish">Завершить</string>
+    <string name="PEGI">Ограничение по возрасту</string>
+    <string name="Version">Текущая версия</string>
+    <string name="NameFinal">Название: </string>
+    <string name="DeveloperFinal">Разработчик: </string>
+    <string name="PublisherFinal">Издатель: </string>
+    <string name="GenreFinal">Жанр: </string>
+    <string name="PlatformFinal">Платформа: </string>
+    <string name="ReleaseDateFinal">Дата выхода: </string>
+    <string name="PEGIFinal">Ограничение по возрасту: </string>
+    <string name="VersionFinal">Текущая версия: </string>
+    <string name="Error">Заполните поле</string>
+    <string name="Email">E-mail</string>
+    <string name="CellPhone">Мобильный телефон</string>
+    <string name="Photo">Выбрать изображение</string>
+    <string name="SocialMedia">Социальная сеть</string>
+</resources>

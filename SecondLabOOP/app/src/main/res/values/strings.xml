@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SecondLabOOP</string>
+    <string name="amount">Сумма вклада</string>
+    <string name="term">Срок размещения</string>
+    <string name="StartDate">Дата начала срока</string>
+    <string name="BetPercent">Процентная ставка</string>
+    <string name="accrued">Тип начисления</string>
+    <string name="Period">Периодичность капитализации</string>
+    <string name="replenishment">Пополение вклада</string>
+    <string name="right">Проверьте правильность введённых данных</string>
+    <string name="Percent">% годовых</string>
+    <string name="add">Добавлять ко вкладу</string>
+    <string name="pay">Выплачивать</string>
+    <string name="Count">Рассчитать</string>
+    <string name="StartContr">Начальная сумма вклада: </string>
+    <string name="percentResult">Процентная ставка: </string>
+    <string name="percentType">Способ начисления процентов: </string>
+    <string name="Profit">Прибыль: </string>
+    <string name="total">Итого: </string>
+    <string name="back">Вернуться</string>
+</resources>
