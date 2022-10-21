@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FiveLab</string>
+    <string name="List">Все задачи</string>
+    <string name="add">Добавить</string>
+    <string name="Name">Название</string>
+    <string name="Desciption">Описание</string>
+    <string name="Complexity">Сложность</string>
+    <string name="Urgency">Срочность</string>
+    <string name="Deadline">Сроки</string>
+    <string name="Photo">Выбрать картинку</string>
+    <string name="Change">Изменить</string>
+    <string name="Delete">Удалить</string>
+    <string name="Details">Подробности</string>
+    <string name="Up">Up</string>
+    <string name="Close">Закрыть</string>
+    <string name="Open">Открыть</string>
+    <string name="ChangeType">Изменить тип отображения</string>
+    <string-array name="ComplexityArray">
+        <item>Легко</item>
+        <item>Средне</item>
+        <item>Сложно</item>
+    </string-array>
+    <string-array name="UrgencyArray">
+        <item>Совсем не срочно</item>
+        <item>Немного срочно</item>
+        <item>Срочно</item>
+        <item>Очень срочно</item>
+    </string-array>
+</resources>
