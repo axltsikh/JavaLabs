@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FourteenLab</string>
+    <string name="ChooseSource">Выберите источник данных</string>
+    <string name="ChooseUpdateRate">Выберите частоту обновления</string>\
+    <string name="Start">Начать</string>
+    <string name="Stop">Приостановить</string>
+    <string-array name="WhereToGetInfo">
+        <item>Wifi</item>
+        <item>GPS</item>
+    </string-array>
+    <string-array name="UpdateRate">
+        <item>5 секунд</item>
+        <item>10 секунд</item>
+        <item>20 секунд</item>
+        <item>30 секунд</item>
+        <item>60 секунд</item>
+    </string-array>
+</resources>

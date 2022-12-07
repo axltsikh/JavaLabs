@@ -1,7 +1,7 @@
 package com.example.elevenlabsecondtry.ChessPiece
 
 import android.util.Log
-import com.example.elevenlabsecondtry.ChessBoard
+import com.example.elevenlabsecondtry.OtherTasks.ChessBoard
 import com.example.elevenlabsecondtry.Fragments.TAG
 
 

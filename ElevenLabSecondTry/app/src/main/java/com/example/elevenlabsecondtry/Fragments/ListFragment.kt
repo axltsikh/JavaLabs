@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import com.example.elevenlabsecondtry.ChessBoard
+import com.example.elevenlabsecondtry.OtherTasks.ChessBoard
 import com.example.elevenlabsecondtry.ChessPiece.ChessPieceInterface
 import com.example.elevenlabsecondtry.R
 
@@ -33,12 +33,16 @@ class ListFragment : Fragment() {
         val adapter= ArrayAdapter<ChessPieceInterface>(rootView.context,android.R.layout.simple_list_item_1,buffer)
         list.adapter=adapter;
         list.setOnItemClickListener(AdapterView.OnItemClickListener { adapterView, view, i, l ->
+
             val fr:Fragment= PieceDetails()
             val bundle:Bundle=Bundle()
             bundle.putSerializable("piece", ChessBoard.Pieces.get(i));
             bundle.putSerializable("class", ChessBoard.Pieces.get(i).javaClass)
             fr.arguments=bundle
-            activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.listContainer,fr)?.addToBackStack(null)?.commit();
+            activity?.supportFragmentManager?.beginTransaction()
+                ?.setCustomAnimations(R.animator.open_piece_details,R.animator.close_piece_details)
+                ?.replace(R.id.listContainer,fr)
+                ?.addToBackStack(null)?.commit();
         })
     }
 }

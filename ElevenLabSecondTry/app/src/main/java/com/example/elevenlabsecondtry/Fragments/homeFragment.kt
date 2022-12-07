@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
-import com.example.elevenlabsecondtry.ChessBoard
+import com.example.elevenlabsecondtry.OtherTasks.ChessBoard
 import com.example.elevenlabsecondtry.R
 
 var TAG:String="ExceptionLog"

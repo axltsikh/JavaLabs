@@ -6,6 +6,9 @@
     <string name="addPiece">Добавить фигуру</string>
     <string name="home">Главная</string>
     <string name="fillAuto">Заполнить автоматически</string>
+    <string name="WelcomeWords">Приветственный текст</string>
+    <string name="Version">Версия</string>
+    <string name="Return">Вернуться</string>
     <string-array name="Colors">
         <item>White</item>
         <item>Red</item>

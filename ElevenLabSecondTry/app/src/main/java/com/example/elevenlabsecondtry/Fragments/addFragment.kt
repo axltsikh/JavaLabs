@@ -1,13 +1,17 @@
 package com.example.elevenlabsecondtry.Fragments
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.animation.ObjectAnimator
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
 import android.widget.*
-import com.example.elevenlabsecondtry.ChessBoard
+import androidx.core.animation.addListener
+import com.example.elevenlabsecondtry.OtherTasks.ChessBoard
 import com.example.elevenlabsecondtry.ChessPiece.*
 import com.example.elevenlabsecondtry.R
 
@@ -32,10 +36,51 @@ class addFragment : Fragment() {
         spinner.adapter=adapter
         val button:Button=rootView.findViewById(R.id.CreateButton)
         button.setOnClickListener(View.OnClickListener {
+            val createXAnimation=ObjectAnimator.ofFloat(button,"scaleX",1.1f)
+            val createYAnimation=ObjectAnimator.ofFloat(button,"scaleY",1.1f)
+            createXAnimation.duration=150
+            createYAnimation.duration=150
+            createYAnimation.addListener(object: AnimatorListenerAdapter(){
+                override fun onAnimationEnd(animation: Animator?) {
+                    val createYAnimationBack=ObjectAnimator.ofFloat(button,"scaleY",1f)
+                    createYAnimationBack.duration=150
+                    createYAnimationBack.start()
+                }
+            })
+            createXAnimation.addListener(object: AnimatorListenerAdapter(){
+                override fun onAnimationEnd(animation: Animator?) {
+                    val createXAnimationBack=ObjectAnimator.ofFloat(button,"scaleX",1f)
+                    createXAnimationBack.duration=150
+                    createXAnimationBack.start()
+                }
+            })
+            createXAnimation.start()
+            createYAnimation.start()
+
             Create()
         })
         val buttonauto:Button=rootView.findViewById(R.id.autoFill)
         buttonauto.setOnClickListener(View.OnClickListener {
+            val createXAnimation=ObjectAnimator.ofFloat(buttonauto,"scaleX",1.1f)
+            val createYAnimation=ObjectAnimator.ofFloat(buttonauto,"scaleY",1.1f)
+            createXAnimation.duration=150
+            createYAnimation.duration=150
+            createYAnimation.addListener(object: AnimatorListenerAdapter(){
+                override fun onAnimationEnd(animation: Animator?) {
+                    val createYAnimationBack=ObjectAnimator.ofFloat(buttonauto,"scaleY",1f)
+                    createYAnimationBack.duration=150
+                    createYAnimationBack.start()
+                }
+            })
+            createXAnimation.addListener(object: AnimatorListenerAdapter(){
+                override fun onAnimationEnd(animation: Animator?) {
+                    val createXAnimationBack=ObjectAnimator.ofFloat(buttonauto,"scaleX",1f)
+                    createXAnimationBack.duration=150
+                    createXAnimationBack.start()
+                }
+            })
+            createXAnimation.start()
+            createYAnimation.start()
             autoFill()
         })
     }
