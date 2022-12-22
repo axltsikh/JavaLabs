@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FifteenLab</string>
+    <string name="StartButton">Start</string>
+    <string name="StopButton">Stop</string>
+</resources>
